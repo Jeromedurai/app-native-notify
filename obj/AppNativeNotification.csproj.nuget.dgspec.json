@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jerome.c/Desktop/GitHub/Web/Old Web/xtrachef-web/Source/XtraChef/XtraChef-ServiceBlock/app-native-notification/src/AppNativeNotification/AppNativeNotification.csproj": {}
+  },
+  "projects": {
+    "/Users/jerome.c/Desktop/GitHub/Web/Old Web/xtrachef-web/Source/XtraChef/XtraChef-ServiceBlock/app-native-notification/src/AppNativeNotification/AppNativeNotification.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jerome.c/Desktop/GitHub/Web/Old Web/xtrachef-web/Source/XtraChef/XtraChef-ServiceBlock/app-native-notification/src/AppNativeNotification/AppNativeNotification.csproj",
+        "projectName": "AppNativeNotification",
+        "projectPath": "/Users/jerome.c/Desktop/GitHub/Web/Old Web/xtrachef-web/Source/XtraChef/XtraChef-ServiceBlock/app-native-notification/src/AppNativeNotification/AppNativeNotification.csproj",
+        "packagesPath": "/Users/jerome.c/.nuget/packages/",
+        "outputPath": "/Users/jerome.c/Desktop/GitHub/Web/Old Web/xtrachef-web/Source/XtraChef/XtraChef-ServiceBlock/app-native-notification/src/AppNativeNotification/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jerome.c/Desktop/GitHub/Web/Old Web/xtrachef-web/Source/XtraChef/XtraChef-ServiceBlock/app-native-notification/NuGet.Config",
+          "/Users/jerome.c/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Hosting.WindowsServices": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[8.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/jerome.c/.dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
