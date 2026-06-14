@@ -12,6 +12,8 @@ var builder = Host.CreateApplicationBuilder(args);
 var serviceName = builder.Configuration["ServiceSettings:ServiceName"] ?? "AppNativeNotificationService";
 var apiBaseUrl = builder.Configuration["ServiceSettings:ApiBaseUrl"] ?? throw new InvalidOperationException("ServiceSettings:ApiBaseUrl is required");
 var apiEndpoint = builder.Configuration["ServiceSettings:ApiEndpoint"] ?? "/api/notification/send";
+var whatsAppEndpoint = builder.Configuration["ServiceSettings:WhatsAppEndpoint"] ?? "/api/1.0/email/notification/whatsapp";
+var workerKey = builder.Configuration["ServiceSettings:WorkerKey"] ?? "";
 var httpTimeout = builder.Configuration.GetValue("ServiceSettings:HttpTimeoutSeconds", 30);
 
 // Configure Windows Service
@@ -50,7 +52,7 @@ builder.Services.AddSingleton<NotificationProcessor>(sp =>
     var logger = sp.GetRequiredService<ILogger<NotificationProcessor>>();
     var dataAccess = sp.GetRequiredService<INotificationDataAccess>();
 
-    return new NotificationProcessor(dataAccess, httpClient, logger, apiBaseUrl, apiEndpoint, serviceName);
+    return new NotificationProcessor(dataAccess, httpClient, logger, apiBaseUrl, apiEndpoint, whatsAppEndpoint, workerKey, serviceName);
 });
 
 // Register background worker

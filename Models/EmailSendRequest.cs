@@ -6,6 +6,7 @@ namespace AppNativeNotification.Models;
 public class EmailSendRequest
 {
     public long Id { get; set; }
+    public long TenantId { get; set; }
     public int TemplateId { get; set; }
     public string EmailSP { get; set; } = string.Empty;
     public string? CorrelationId { get; set; }

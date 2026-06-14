@@ -1,10 +1,6 @@
 -- =============================================
 -- App Native Notification Service - Stored Procedures
 -- Simple and Clean Implementation
--- =============================================
-
-USE [XTRACHEF_DB]
-GO
 
 -- =============================================
 -- SP: MTS_GetEmailSchedule

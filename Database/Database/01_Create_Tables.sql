@@ -107,6 +107,53 @@ BEGIN
         (6, 6, 'Sale Notification', 0, NULL, NULL),
         (7, 7, 'Lower Price Notification', 0, NULL, NULL),
         (9, 9, 'User Password Reset', 1, NULL, NULL)
+        (15, 15, 'Two-Factor Authentication Code', 0, NULL, NULL),
+(16, 16, 'Order Confirmed', 0, NULL, NULL),
+(17, 17, 'Order Packed', 0, NULL, NULL),
+(18, 18, 'Order Shipped', 0, NULL, NULL),
+(19, 19, 'Out for Delivery', 0, NULL, NULL),
+(20, 20, 'Order Delivered', 0, NULL, NULL),
+(21, 21, 'Order Cancelled', 0, NULL, NULL),
+(22, 22, 'Order Delayed', 0, NULL, NULL),
+(23, 23, 'Return Requested', 0, NULL, NULL),
+(24, 24, 'Return Approved', 0, NULL, NULL),
+(25, 25, 'Invoice / Receipt', 0, NULL, NULL),
+
+-- ===== Payments =====
+(26, 26, 'Payment Successful', 0, NULL, NULL),
+(27, 27, 'Payment Failed', 0, NULL, NULL),
+(28, 28, 'Payment Pending', 0, NULL, NULL),
+(29, 29, 'Refund Initiated', 0, NULL, NULL),
+(30, 30, 'Refund Completed', 0, NULL, NULL),
+(31, 31, 'Wallet Credited', 1, NULL, NULL),
+(32, 32, 'EMI / Installment Reminder', 1, NULL, NULL),
+
+-- ===== Cart / Wishlist =====
+(33, 33, 'Abandoned Cart Reminder', 1, NULL, NULL),
+(34, 34, 'Wishlist Item Back in Stock', 1, NULL, NULL),
+(35, 35, 'Wishlist Price Drop', 1, NULL, NULL),
+
+(36, 36, 'New Product Launch', 1, NULL, NULL),
+(37, 37, 'Coupon / Voucher', 1, NULL, NULL),
+(38, 38, 'Flash Sale', 1, NULL, NULL),
+(39, 39, 'Loyalty Points Earned', 1, NULL, NULL),
+(40, 40, 'Referral Reward', 1, NULL, NULL),
+(41, 41, 'Festive / Seasonal Offer', 1, NULL, NULL),
+(42, 42, 'Birthday / Anniversary Offer', 1, NULL, NULL),
+(43, 43, 'Cashback Credited', 1, NULL, NULL),
+(44, 44, 'Back in Stock Alert', 1, NULL, NULL),
+
+-- ===== Reviews / Feedback =====
+(45, 45, 'Product Review Request', 1, NULL, NULL),
+(46, 46, 'Review Approved', 1, NULL, NULL),
+(47, 47, 'Question Answered (Q&A)', 1, NULL, NULL),
+
+-- ===== Subscription / Support / Other =====
+(48, 48, 'Subscription Renewal Reminder', 0, NULL, NULL),
+(49, 49, 'Subscription Expired', 0, NULL, NULL),
+(50, 50, 'Gift Card Received', 0, NULL, NULL),
+(51, 51, 'Support Ticket Update', 0, NULL, NULL),
+(52, 52, 'Newsletter', 1, NULL, NULL);
 
     SET IDENTITY_INSERT [dbo].[MTS_EMAILSCHEDULE] OFF
 END
